@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            try {
+                document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+            } catch (error) {
+                document.documentElement.dataset.theme = 'light';
+            }
+        </script>
+        <title>Proje 2 - Umutcan Gürel</title>
+        <meta name="description" content="Umutcan Gürel'in web geliştirme eğitiminde hazırladığı ikinci proje çalışmasını, geliştirme notlarını ve ileride eklenecek içerikleri inceleyin.">
+        <link rel="canonical" href="https://ornek.com/projeler/proje-2.html">
+        <meta property="og:title" content="Proje 2 - Umutcan Gürel">
+        <meta property="og:description" content="Umutcan Gürel'in geliştirmeye devam ettiği ikinci web projesi.">
+        <meta property="og:image" content="https://ornek.com/images/onizleme.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ornek.com/projeler/proje-2.html">
+        <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+<header id="ust">
+    <p><a class="site-mark" href="../index.html"><img src="../favicon/android-chrome-192x192.png" alt="" width="32" height="32">Umutcan Gürel</a></p>
+    <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Koyu modu aç" aria-pressed="false">🌙</button>
+        <nav class="site-nav" aria-label="Ana menü">
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="../hakkimda.html">Hakkımda</a></li>
+                <li><a href="index.html" aria-current="page">Projeler</a></li>
+                <li><a href="api-deneme.html">API Denemesi</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+        <main>
+        <h1>Proje-2</h1>
+        <article>
+        <p>Bu sayfa ikinci proje çalışmam için hazırlanmıştır.</p>
+        <p>Projenin içeriği ilerleyen derslerde geliştirilecektir.</p>
+        <!-- Yeni görsel eklemek için aşağıdaki satırdaki yorumu kaldırabilirsin.
+        <img src="../images/proje-2.webp" alt="Proje 2 görseli" width="1200" height="800">
+        -->
+        </article>
+        <p class="geri-don-alani"><a class="geri-don" href="index.html">Projeler sayfasına dön</a></p>
+        </main>
+        <footer>
+        <ul>
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../hakkimda.html">Hakkımda</a></li>
+            <li><a href="#ust">Yukarı Çık</a></li>
+        </ul>
+        <p>&copy; <span data-current-year>2026</span> Umutcan Gürel</p>
+        </footer>
+        <script type="module" src="../script.js"></script>
+    </body>
+</html>

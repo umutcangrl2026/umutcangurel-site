@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            try {
+                document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+            } catch (error) {
+                document.documentElement.dataset.theme = 'light';
+            }
+        </script>
+        <title>Projeler - Umutcan Gürel</title>
+        <meta name="description" content="Umutcan Gürel'in HTML ve CSS öğrenme sürecinde hazırladığı web projelerini, çalışmalarını ve geliştirme deneyimlerini bu sayfada inceleyin.">
+        <link rel="canonical" href="https://ornek.com/projeler/index.html">
+        <meta property="og:title" content="Projeler - Umutcan Gürel">
+        <meta property="og:description" content="Umutcan Gürel'in web geliştirme öğrenme sürecindeki projeleri.">
+        <meta property="og:image" content="https://ornek.com/images/onizleme.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ornek.com/projeler/index.html">
+        <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+<header id="ust">
+    <p><a class="site-mark" href="../index.html"><img src="../favicon/android-chrome-192x192.png" alt="" width="32" height="32">Umutcan Gürel</a></p>
+    <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Koyu modu aç" aria-pressed="false">🌙</button>
+        <nav class="site-nav" aria-label="Ana menü">
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="../hakkimda.html">Hakkımda</a></li>
+                <li><a href="index.html" aria-current="page">Projeler</a></li>
+                <li><a href="api-deneme.html">API Denemesi</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+        <main>
+        <h1>Projeler</h1>
+        <p>Yaptığım projelere aşağıdaki bağlantılardan ulaşabilirsiniz.</p>
+        <section id="proje-listesi">
+        <h2>Proje Listesi</h2>
+        <div class="project-slider" role="region" aria-label="Proje gösterimi">
+            <div class="project-slider-window">
+                <div class="project-slider-track">
+                    <article class="project-slide">
+                        <h3>Proje 1</h3>
+                        <p>Bu proje ilk HTML denemelerini içeren temel sayfa yapısını gösterir.</p>
+                        <a class="button-link" href="proje-1.html">Detayları Gör</a>
+                    </article>
+                    <article class="project-slide">
+                        <h3>Proje 2</h3>
+                        <p>İkinci çalışma, ilerleyen derslerde geliştirilecek içeriklerin hazırlık aşamasını anlatır.</p>
+                        <a class="button-link" href="proje-2.html">Detayları Gör</a>
+                    </article>
+                    <article class="project-slide">
+                        <h3>Proje 3</h3>
+                        <p>Üçüncü proje, sayfa düzenini ve içerik planlamasını denemek için hazırlanmıştır.</p>
+                        <a class="button-link" href="proje-3.html">Detayları Gör</a>
+                    </article>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button type="button" class="slider-button" data-direction="prev" aria-label="Önceki proje">&#10094;</button>
+                <button type="button" class="slider-button" data-direction="next" aria-label="Sonraki proje">&#10095;</button>
+            </div>
+        </div>
+        </section>
+        </main>
+        <footer>
+        <ul>
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../hakkimda.html">Hakkımda</a></li>
+            <li><a href="#ust">Yukarı Çık</a></li>
+        </ul>
+        <p>&copy; <span data-current-year>2026</span> Umutcan Gürel</p>
+        </footer>
+        <script type="module" src="../script.js"></script>
+    </body>
+</html>

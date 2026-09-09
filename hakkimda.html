@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            try {
+                document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+            } catch (error) {
+                document.documentElement.dataset.theme = 'light';
+            }
+        </script>
+        <title>Hakkımda - Umutcan Gürel</title>
+        <meta name="description" content="Umutcan Gürel'in eğitimi, yazılım öğrenme yolculuğu, hobileri, gelecek planları, sertifikaları ve iletişim bilgileri hakkında detaylı bilgi alın.">
+        <link rel="canonical" href="https://ornek.com/hakkimda.html">
+        <meta property="og:title" content="Hakkımda - Umutcan Gürel">
+        <meta property="og:description" content="Umutcan Gürel'in eğitimi, yazılım yolculuğu ve gelecek planları.">
+        <meta property="og:image" content="https://ornek.com/images/onizleme.jpg">
+        <meta property="og:type" content="profile">
+        <meta property="og:url" content="https://ornek.com/hakkimda.html">
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<header id="ust">
+    <p><a class="site-mark" href="index.html"><img src="favicon/android-chrome-192x192.png" alt="" width="32" height="32">Umutcan Gürel</a></p>
+    <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Koyu modu aç" aria-pressed="false">🌙</button>
+        <nav class="site-nav" aria-label="Ana menü">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html" aria-current="page">Hakkımda</a></li>
+                <li><a href="projeler/index.html">Projeler</a></li>
+                <li><a href="projeler/api-deneme.html">API Denemesi</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+   <main>
+     <h1>Hakkımda</h1>
+     <p>Ben Umutcan Gürel.</p> 
+        <p>26 Yaşındayım ve Bursa'da yaşıyorum.</p>
+    <section id="egitim">
+      <h2>Eğitim</h2>
+
+    <p>İlkokul, ortaokul ve liseyi <span class="vurgu">Bursa'da</span> tamamladım.</p>
+    <p>Bursa Uludağ Üniversitesi'nde <span class="vurgu">2 Yıllık Dış Ticaret Ön Lisans</span> bölümünü bitirdim.</p>
+    </section>
+    <section id="yazilim">
+      <h2>Yazılım Yolculuğum</h2>
+<p>Üniversite yerleştirmelerini beklerken yazılım öğrenmeye karar verdim.</p>
+<p>Şu anda <span class="vurgu">HTML ve CSS</span> derslerini alıyorum.</p>
+<p>İlerleyen zamanlarda JavaScript ve Python derslerini de almayı planlıyorum.</p>
+    </section>
+    <section id="hobiler">
+      <h2>Hobilerim</h2>
+<p>Kitap okumayı, müzik dinlemeyi ve spor yapmayı severim.</p>
+<p>Yemek yapmayı severim.</p>
+<p>Futbol oynamayı severim. Ancak futbolu daha çok izlemeyi severim.</p>
+      <!-- Fantazi Görsel ekliyorum-->
+    <!-- Yeni görsel eklemek için aşağıdaki satırdaki yorumu kaldırabilirsin.
+    <img src="images/guendouzi.webp" alt="Guendouzi'nin uyarlama fotoğrafı" width="736" height="1104">
+    -->
+    </section>
+    <section id="gelecek">
+      <h2>Gelecek Planlarım</h2>
+<p>Gelecek planlarım arasında yazılım alanında kendimi geliştirmek ve bu alanda bir kariyer yapmak var.</p>
+<p>Ayrıca yazılım alanında kendimi geliştirdikten sonra kendi projelerimi yapmak istiyorum.</p>
+    </section>
+        <section id="sertifikalar">
+            <h2>Sertifikalarım</h2>
+            <p>Sertifikalarımı incelemek için bir tanesine tıklayabilirsiniz.</p>
+            <div class="sertifika-listesi">
+                <a class="sertifika-karti" href="images/claude-101-certificate.pdf" data-course="Claude 101" data-file="images/claude-101-certificate.pdf">
+                    <img class="sertifika-kucuk-resim" src="images/claude-101-certificate.webp" alt="Claude 101 sertifikası">
+                </a>
+                <a class="sertifika-karti" href="images/claude-code-in-action-certificate.pdf" data-course="Claude Code in Action" data-file="images/claude-code-in-action-certificate.pdf">
+                    <img class="sertifika-kucuk-resim" src="images/claude-code-in-action-certificate.webp" alt="Claude Code in Action sertifikası">
+                </a>
+                <a class="sertifika-karti" href="images/code-101-certificate.pdf" data-course="Claude Code 101" data-file="images/code-101-certificate.pdf">
+                    <img class="sertifika-kucuk-resim" src="images/code-101-certificate.webp" alt="Claude Code 101 sertifikası">
+                </a>
+                <a class="sertifika-karti" href="images/introduction-to-claude-cowork-certificate.pdf" data-course="Introduction to Claude Cowork" data-file="images/introduction-to-claude-cowork-certificate.pdf">
+                    <img class="sertifika-kucuk-resim" src="images/introduction-to-claude-cowork-certificate.webp" alt="Introduction to Claude Cowork sertifikası">
+                </a>
+                <a class="sertifika-karti" href="images/platform-101-certificate.pdf" data-course="Claude Platform 101" data-file="images/platform-101-certificate.pdf">
+                    <img class="sertifika-kucuk-resim" src="images/platform-101-certificate.webp" alt="Claude Platform 101 sertifikası">
+                </a>
+                <a class="sertifika-karti" href="images/ai-fluency-framework.pdf" data-course="AI Fluency Framework & Foundations" data-file="images/ai-fluency-framework.pdf">
+                    <img class="sertifika-kucuk-resim" src="images/ai-fluency-framework.webp" alt="AI Fluency Framework & Foundations sertifikası">
+                </a>
+            </div>
+        </section>
+    <section id="iletisim">
+      <h2>İletişim</h2>
+    <p>Benimle iletişime geçmek isterseniz aşağıdaki mail adresinden ve telefonundan bana ulaşabilirsiniz.</p>
+    <p>Mail Adresim: <a href="mailto:umutcan_gurel@hotmail.com">umutcan_gurel@hotmail.com</a></p>
+    <p>Telefon Numaram: (+90) 555 555 55 55</p>
+
+    <form action="/iletisim" method="POST">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <p>
+            <label for="ad">Adınız</label>
+            <input type="text" id="ad" name="ad" required>
+            <label for="soyad">Soyadınız</label>
+            <input type="text" id="soyad" name="soyad" required>
+            </p>
+            <p class="cinsiyet">
+                <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+                <label for="erkek">Erkek</label>
+                
+                <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+                <label for="kadin">Kadın</label>
+
+                <input type="radio" id="diger" name="cinsiyet" value="diger">
+                <label for="diger">Diğer</label>    
+
+                <input type="radio" id="belirtmekistemiyorum" name="cinsiyet" value="belirtmekistemiyorum">
+                <label for="belirtmekistemiyorum">Belirtmek istemiyorum</label>
+            </p>
+            <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon">
+            </p>
+        </fieldset>
+        <fieldset> 
+            <legend>Mesajınız</legend>
+            <p>  
+               <label for="konu">Konu:</label>
+               <select id="konu" name="konu" required>
+               <option value="">Seçiniz</option>    
+               <option value="soru">Soru</option>
+               <option value="oneri">Öneri</option>
+               <option value="sikayet">Şikayet</option> 
+             </select>
+            </p>
+            <p>    
+             <label for="mesaj">Mesajınız:</label>
+             <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>İlgi alanları</legend>
+            <p class="ilgi">
+                <input type="checkbox" id="spor" name="ilgi" value="spor">
+                <label for="spor">Spor</label>
+
+                <input type="checkbox" id="sinema" name="ilgi" value="sinema">
+                <label for="sinema">Dizi/Film</label>
+                
+                <input type="checkbox" id="muzik" name="ilgi" value="muzik">
+                <label for="muzik">Müzik</label>
+                
+                <input type="checkbox" id="kitap" name="ilgi" value="kitap">
+                <label for="kitap">Kitap</label>
+
+                <input type="checkbox" id="yemek" name="ilgi" value="yemek">
+                <label for="yemek">Yemek</label>        
+
+                <input type="checkbox" id="yazilim" name="ilgi" value="yazilim">
+                <label for="yazilim">Yazılım</label>
+
+            </p>
+        </fieldset>        
+        <fieldset>
+            <legend>Nasıl Ulaşalım?</legend>
+            <p class="ulasim">
+                <input type="radio" id="mail" name="ulasim" value="mail">
+                <label for="mail">Mail</label>
+                
+                <input type="radio" id="tel" name="ulasim" value="tel">
+                <label for="tel">Telefon</label>
+                
+                <input type="radio" id="whatsapp" name="ulasim" value="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </p>    
+        </fieldset>
+    <div class="form-notice">
+        <p>
+               <input type="checkbox" id="onay" name="onay" required>
+               <label for="onay">Yukarıdaki bilgilerin doğru olduğunu onaylıyorum.</label>
+        </p>
+        <p>Not: Bu form sadece örnek amaçlıdır. Gönder butonuna basıldığında herhangi bir işlem yapılmayacaktır.</p>
+         <button type="submit">Gönder</button>
+     </div>
+     </form>
+    </section> 
+   </main>
+<dialog id="sertifika-penceresi" aria-labelledby="sertifika-baslik">
+    <div class="sertifika-modal-icerik">
+        <button class="modal-kapat" type="button" aria-label="Sertifikayı kapat">&times;</button>
+        <h2 id="sertifika-baslik">Claude 101</h2>
+        <p class="modal-durum" id="sertifika-durumu" role="status" aria-live="polite" hidden>PDF yükleniyor...</p>
+        <iframe class="sertifika-buyuk-resim" id="sertifika-onizleme" title="Sertifika önizlemesi"></iframe>
+    </div>
+</dialog>
+<footer>    
+ <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="projeler/index.html">Projeler</a></li>
+    <li><a href="#ust">Yukarı Çık</a></li>
+ </ul>
+ <p>&copy; <span data-current-year>2026</span> Umutcan Gürel</p>
+</footer>  
+<script type="module" src="script.js"></script>
+    </body>
+</html>    

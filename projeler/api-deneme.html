@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+			try {
+				document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+			} catch (error) {
+				document.documentElement.dataset.theme = 'light';
+			}
+		</script>
+		<title>API Denemeleri - Umutcan Gürel</title>
+		<meta name="description" content="Fetch, Promise, JSON ve API denemeleri.">
+		<link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<header id="ust">
+			<p><a class="site-mark" href="../index.html"><img src="../favicon/android-chrome-192x192.png" alt="" width="32" height="32">Umutcan Gürel</a></p>
+			<div class="header-actions">
+				<button class="theme-toggle" type="button" aria-label="Koyu modu aç" aria-pressed="false">🌙</button>
+				<nav class="site-nav" aria-label="Ana menü">
+					<ul>
+						<li><a href="../index.html">Ana Sayfa</a></li>
+						<li><a href="../hakkimda.html">Hakkımda</a></li>
+						<li><a href="index.html">Projeler</a></li>
+						<li><a href="api-deneme.html" aria-current="page">API Denemesi</a></li>
+					</ul>
+				</nav>
+				<button class="nav-toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<h1>API ve JSON Denemeleri</h1>
+			<p>Fetch, async/await, Promise.all ve JSON işlemlerini gerçek bir test API'siyle deniyorum.</p>
+
+			<section aria-labelledby="post-baslik">
+				<h2 id="post-baslik">İlk 10 gönderi</h2>
+				<p data-api-status role="status" aria-live="polite">Veriler yükleniyor...</p>
+				<div data-api-post-list></div>
+			</section>
+
+			<section aria-labelledby="hata-baslik">
+				<h2 id="hata-baslik">Hata kontrolü</h2>
+				<p>Yanlış URL, <code>response.ok</code> kontrolüyle yakalanıyor.</p>
+				<button class="button-link api-error-button" type="button" data-api-error-test>Yanlış URL'yi dene</button>
+				<p data-api-error-status role="status" aria-live="polite"></p>
+			</section>
+
+			<section aria-labelledby="json-baslik">
+				<h2 id="json-baslik">JSON ve localStorage</h2>
+				<p data-json-status role="status" aria-live="polite">JSON işlemleri konsola yazdırılıyor.</p>
+			</section>
+
+			<section aria-labelledby="hata-deneyi-baslik">
+				<h2 id="hata-deneyi-baslik">Hata deneyleri</h2>
+				<p>setTimeout içindeki hatanın dışarıdaki try/catch tarafından yakalanamadığını görmek için düğmeye basın.</p>
+				<button class="button-link api-error-button" type="button" data-timeout-error-test>setTimeout hatasını test et</button>
+				<p>String hata ve Error nesnesinin stack farkı konsola yazdırılır.</p>
+			</section>
+		</main>
+
+		<footer>
+			<ul>
+				<li><a href="../index.html">Ana Sayfa</a></li>
+				<li><a href="index.html">Projeler</a></li>
+				<li><a href="#ust">Yukarı Çık</a></li>
+			</ul>
+			<p>&copy; <span data-current-year>2026</span> Umutcan Gürel</p>
+		</footer>
+
+		<script type="module" src="../script.js"></script>
+		<script type="module" src="api-deneme.js"></script>
+	</body>
+</html>
