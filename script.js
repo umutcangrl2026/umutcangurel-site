@@ -78,7 +78,7 @@ if (navToggle && siteNav) {
 const revealItems = document.querySelectorAll('main > h1, main > p, section, footer');
 
 revealItems.forEach((item, index) => {
-  const revealDelay = prefersReducedMotion.matches ? 0 : index * 80;
+  const revealDelay = prefersReducedMotion.matches ? 0 : index * 90;
   item.style.setProperty('--reveal-delay', `${revealDelay}ms`);
   item.classList.add('reveal');
 });
